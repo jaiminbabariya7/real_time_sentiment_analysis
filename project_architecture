@@ -1,0 +1,41 @@
+project_name/
+│
+├── dataflow/
+│   ├── main.py                  # Dataflow pipeline code
+│   └── requirements.txt         # Python package requirements for Dataflow
+│
+├── pubsub/
+│   ├── publisher.py             # Code for publishing test data to Pub/Sub
+│   └── requirements.txt         # Python package requirements for Pub/Sub
+│
+├── README.md                    # Project documentation
+├── requirements.txt             # Overall Python package requirements for the project
+└── architecture_diagram.png     # Architecture diagram of the project
+
+# Explanation of Files
+
+## `dataflow/`
+
+### `main.py`
+This file contains the Python code defining the Dataflow pipeline. It includes logic for reading messages from Google Cloud Pub/Sub, performing sentiment analysis using the Natural Language API, and processing the results.
+
+### `requirements.txt`
+This file lists the Python package requirements specific to the Dataflow component of the project.
+
+## `pubsub/`
+
+### `publisher.py`
+This file contains the Python code for publishing test data to Google Cloud Pub/Sub. It's used for triggering the Dataflow pipeline by publishing sample text messages to the Pub/Sub topic.
+
+### `requirements.txt`
+Similar to the `requirements.txt` file in the `dataflow/` directory, this file lists the Python package requirements specific to the Pub/Sub component of the project.
+
+## `README.md`
+This file serves as documentation for the project. It includes an overview of the project, setup instructions, usage guidelines, and any other relevant information for users and developers.
+
+## `requirements.txt`
+This file lists the overall Python package requirements for the entire project. It includes dependencies for both the Dataflow and Pub/Sub components, as well as any other required packages.
+
+## `architecture_diagram.png`
+This image file contains the architecture diagram of the project. It provides a visual representation of how the different components of the project interact with each other.
+
