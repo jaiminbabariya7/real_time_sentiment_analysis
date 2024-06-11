@@ -1,1 +1,4 @@
-google-cloud-pubsub==2.14.0google-cloud-dataflow==2.9.0google-cloud-language==2.2.2
+# Overall project requirements
+google-cloud-pubsub==2.14.0
+google-cloud-language==2.2.2
+apache-beam[gcp]==2.39.0
